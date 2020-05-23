@@ -1,0 +1,64 @@
+
+.post-container{
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 100px;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    margin-left: 20px;
+    justify-items: center;
+    align-items: flex-start;
+    grid-template-areas: 
+    "mainpost", "postbar"
+    "mainpost", "postbar"
+    "share"
+}
+
+
+.mainpost {
+    
+    font-family: Montserrat, sans-serif;
+    font-size: large;
+    overflow: auto;
+}
+
+    h2 {
+    background-color:#66ffa6;
+    }
+
+
+.card {
+       
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);   
+    border: 5px ridge #66ffa6;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color:  #f5c9c9;
+    font-family: Montserrat, sans-serif;
+}
+
+      
+.title {
+
+    color:#916a6a;
+    font-size: 18px;
+    font-family: Montserrat, sans-serif;
+}
+
+
+.twitter-share-button{
+    
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+

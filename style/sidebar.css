@@ -1,0 +1,20 @@
+.vertical-menu{
+
+  display: block;
+  margin: 0 2vw;
+  font-size: 5vh;
+  font-weight: bold;
+}
+  
+  
+.sidebar{
+  
+  background-color:#f5c9c9;
+  border: 5px #66ffa6;  
+  border-radius: 2em;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: "Montserrat",sans-serif;
+  font-weight: normal;
+  
+}
