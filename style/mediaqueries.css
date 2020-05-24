@@ -17,3 +17,39 @@
   html { font-size:100%; }
 
 
+  
+
+
+ @media all and (max-width: 1000px) {
+  .navigation ul {
+     flex-wrap: wrap;
+  }
+  
+  .navigation li {
+     flex: 1 1 50%;
+  }
+
+  }
+
+
+  @media all and (max-width: 480px) {
+    .navigation li {
+       flex-basis: 100%;
+    }
+
+  }
+
+@media only screen and (max-width: 480px) {
+  
+  .post-container 
+
+    {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+  }
+
+
+  
+  
+

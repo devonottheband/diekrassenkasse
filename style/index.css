@@ -1,17 +1,27 @@
 @import "sidebar.css";
+@import "topnav.css";
 @import "post.css";
 @import "mediaqueries.css";
 
 
-.grid-container {
 
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 100px;
-  gap: 1px 1px;
-  grid-template-areas: 
-  "sidebar","content"
-   
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+.site-content {
+  flex: 1;
+  overflow: auto;
+  padding-bottom: 100px;
 }
 
 
@@ -19,12 +29,28 @@
 
   overflow: auto;
   background-color: #66ffa6;
+  size: 2em;
   padding: 20px 20px 20px 20px;
   font-family: 'Piedra', cursive;
   font-size: xx-large;
   justify-content: left;
     
 }
+
+.grid-container {
+
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 200px;
+  gap: 1px 1px;
+  grid-template-areas: 
+  "sidebar","content"
+   
+}
+
+
+
+
 
 
 .box {
@@ -57,57 +83,32 @@
 }
 
 
-.topnav {
-
-  width: 100%;
-  overflow: auto;
-  padding: 5px 5px 5px 5px; 
-  margin-top: 10px;
-  margin-bottom: 50px;
-       
-}
-
-  ul { 
-
-  margin: 0;
-  padding: 0;
-  display: flex;
+ a{
+  color:#00b248;
+  align-items: flex-start;
   justify-content: space-between;
-
-  }
-
-  li {
-
-  list-style-type: none; 
-  margin: 0 2vw;
-  font-size: 5vh;
-
-  }
-
-  a{
-
   text-decoration: none;
-  color: #00b248;
-  font-weight: bold;
-  font-family: sans-serif;
- 
-  }
 
-  a:hover{
+ } 
+a:hover {
   background-color: #b0ff57;
-  
-  }
-
+}
 
 .my-card {
 
   height: 300px;
   width: 250px;
-  background-color: #f5c9c9;;
+  background-color: #f5c9c9;
   border: 5px ridge #66ffa6;
   font-family: "Montserrat", sans-serif;
-  align-items: flex-start;
+  align-items: flex-center;
   
+}
+
+.my-card figure img {
+  width: 100%;
+  
+
 }
 
 
@@ -137,16 +138,35 @@
 
 }
 
+.fa {
+  display: flex;
+  float: right;
+  justify-content: space-between;
+  }
 
 .footerbox{
+  visibility: hidden;
 
-  background-color: #c29898;
-  font-family: Montserrat, sans-serif;
-  font-size: 1em;
-  display: flex;
-  justify-content: center;
+}
 
- }
+@media screen and (min-width: 600px){
+
+  .footerbox{
+      
+      visibility: visible;
+      background-color: #c29898;
+      font-family: Montserrat, sans-serif;
+      font-size: 1em;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      
+      }
+  
+   }
+
+  
+ 
 
 
 .message {
@@ -158,3 +178,4 @@
   font-size: xx-large;
 
 }
+

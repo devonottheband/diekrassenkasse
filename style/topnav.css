@@ -1,0 +1,46 @@
+topnav {
+  width: 100%;
+  color: #00b248;
+  background-color: lawngreen;
+  padding: 5px 5px 5px 5px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  position: relative;
+  overflow: auto;
+}
+
+.topnav ul {
+  font-family: Montserrat,sans-serif;
+  font-size: 5vh;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.topnav li {
+
+  list-style-type: none; 
+  margin: 0 2vw;
+  font-size: 5vh;
+
+  }
+  navigation ul {
+    border: 10px solid  #66ffa6;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+ }
+ 
+ .navigation li {
+    flex: 3;    
+ }
+ 
+ 
+ 
+
+  
+  
