@@ -12,13 +12,10 @@
     grid-template-areas: 
     "post postbar"
     "post postbar"
-    "post postbar";
-        
+    "post postbar";        
 }
 
-
 .mainpost {
-    
     font-family: Montserrat, sans-serif;
     font-size: large;
     overflow: auto;
@@ -29,8 +26,7 @@
     }
 
 
-.card {
-       
+.card {   
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);   
     border: 5px ridge #66ffa6;
     max-width: 250px;
@@ -46,7 +42,6 @@
 }
       
 .title {
-
     color:#916a6a;
     font-size: 18px;
     font-family: Montserrat, sans-serif;

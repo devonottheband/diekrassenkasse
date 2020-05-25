@@ -7,7 +7,6 @@ html {
 }
 
 .header {
-    grid-area: header;
     overflow: auto;
     background-color: #66ffa6;
     size: 2em;
@@ -41,11 +40,8 @@ a:hover {
 
 .main-content {
     display: grid;
-
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-
     grid-auto-rows: auto;
-
     grid-gap: 1rem;
     justify-content: space-between;
 }
@@ -56,26 +52,13 @@ a:hover {
     background-color: #f5c9c9;
     border: 5px ridge #66ffa6;
     border-radius: 4px;
-
     padding: 0.5rem;
-
     font-family: "Montserrat", sans-serif;
     align-items: flex-center;
 }
 
 .my-card figure img {
     width: 100%;
-}
-
-.mdc-button--outlined {
-    background-color: #f5c9c9;
-    margin-left: 60px;
-}
-
-h4 {
-    size: 100%;
-    align-self: auto;
-    margin: 5%;
 }
 
 .mdc-button--outlined {
@@ -115,9 +98,6 @@ h4 {
 }
 
 .message {
-    font-family: "Piedra", cursive;
-    font-size: xx-large;
-
     font-family: "Piedra", cursive;
     font-size: xx-large;
 }
