@@ -10,37 +10,30 @@ topnav {
 }
 
 .topnav ul {
-  font-family: Montserrat,sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 5vh;
   font-weight: bold;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
-  
 }
 
 .topnav li {
-
-  list-style-type: none; 
+  list-style-type: none;
   margin: 0 2vw;
   font-size: 5vh;
+}
+navigation ul {
+  border: 10px solid #66ffa6;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
 
-  }
-  navigation ul {
-    border: 10px solid  #66ffa6;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
- }
- 
- .navigation li {
-    flex: 3;    
- }
- 
- 
- 
+.navigation li {
+  flex: 3;
+}
 
-  
-  
+   

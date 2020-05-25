@@ -1,55 +1,60 @@
 /* Media Queries: Tablet Landscape */
 @media screen and (max-width: 1060px) {
 
-    #primary { width:67%; }
-    #secondary { width:30%; margin-left:3%;}  
+  #primary { width:67%; }
+  #secondary { width:30%; margin-left:3%;}  
 
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+
+  #primary { width:100%; }
+  #secondary { width:100%; margin:0; border:none; }
+
+}
+
+html { font-size:100%; }
+
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
-  
-  /* Media Queries: Tabled Portrait */
-  @media screen and (max-width: 768px) {
-
-    #primary { width:100%; }
-    #secondary { width:100%; margin:0; border:none; }
-
-  }
-  
-  html { font-size:100%; }
+}
 
 
-  
+
+@media all and (max-width: 1000px) {
+.navigation ul {
+   flex-wrap: wrap;
+}
+
+.navigation li {
+   flex: 1 1 50%;
+}
+
+}
 
 
- @media all and (max-width: 1000px) {
-  .navigation ul {
-     flex-wrap: wrap;
-  }
-  
+@media all and (max-width: 480px) {
   .navigation li {
-     flex: 1 1 50%;
+     flex-basis: 100%;
   }
 
-  }
-
-
-  @media all and (max-width: 480px) {
-    .navigation li {
-       flex-basis: 100%;
-    }
-
-  }
+}
 
 @media only screen and (max-width: 480px) {
-  
-  .post-container 
 
-    {
-      grid-template-columns: repeat(1, 1fr);
+
+  @media (max-width: 480px) {
+   .blog-container{
+    grid-template-areas:
+    "header"
+    "main-content";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     }
-  
-  }
-
-
-  
-  
-
